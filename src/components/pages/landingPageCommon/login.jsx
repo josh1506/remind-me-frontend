@@ -33,8 +33,8 @@ class Login extends FormClass {
                             <Col xs lg="9" fluid>
                                 {this.renderButton('Login with Facebook', 'primary', true)}
                             </Col>
-                            <Col className='ml-3'>
-                                {this.renderButton('Submit', 'primary')}
+                            <Col className=''>
+                                {this.renderButton('Login', 'primary')}
                             </Col>
                         </Row>
                     </Form>
