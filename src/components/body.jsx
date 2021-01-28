@@ -7,8 +7,8 @@ import Todo from './pages/reminder/todo';
 function Body(props) {
     return (
         <main>
-            {/* <HomePage /> */}
-            <Todo />
+            <HomePage />
+            {/* <Todo /> */}
             {/* <Profile /> */}
             {/* <Workspace /> */}
         </main>
