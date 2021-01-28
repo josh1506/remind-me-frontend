@@ -4,15 +4,24 @@ function Profile(props) {
     return (
         <div>
             <img src="" alt="Profile" />
-            <div>
-                <button style={{ float: 'right' }}>Edit Profile</button>
-                <h1>Name</h1>
-                <h3>First Name</h3>
-                <h3>Last Name</h3>
-                <h3>Email</h3>
-                <h3>Gender</h3>
-                <h3>Birth Date</h3>
-            </div>
+            <button style={{ float: 'right' }}>Edit Profile</button>
+            <button style={{ float: 'right' }}>Save</button>
+            <h1>Name</h1>
+            <p>First Name</p>
+            <p>Data here</p>
+            <input type="text" name="fname" id="fname" />
+            <p>Last Name</p>
+            <p>Data here</p>
+            <input type="text" name="lname" id="lname" />
+            <p>Email</p>
+            <p>Data here</p>
+            <input type="text" name="email" id="email" />
+            <p>Gender</p>
+            <p>Data here</p>
+            <input type="text" name="gender" id="gender" />
+            <p>Birth Date</p>
+            <p>Data here</p>
+            <input type="text" name="birth-date" id="birth-date" />
         </div>
     );
 }
