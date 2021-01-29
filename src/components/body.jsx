@@ -13,8 +13,7 @@ function Body(props) {
                 <Route path='/profile' component={Profile} />
                 <Route path='/workspace' component={Workspace} />
                 <Redirect from='/home' to='/' />
-                <Route path='/' exact component={HomePage} />
-                <Redirect to='/not-found' />
+                <Route path='/' component={HomePage} />
             </Switch>
         </main>
     );
