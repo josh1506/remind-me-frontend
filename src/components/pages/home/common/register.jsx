@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function RegisterForm(props) {
     return (
@@ -11,7 +12,7 @@ function RegisterForm(props) {
             <input type="password" name="password" id="password" placeholder="Password" />
             <p>Confirm Password</p>
             <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" />
-            <a href="#">Cancel</a>
+            <Link href="/login">Cancel</Link>
             <button>Register</button>
         </form>
     );

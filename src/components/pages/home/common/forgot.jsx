@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ForgotPassForm(props) {
     return (
@@ -13,7 +14,7 @@ function ForgotPassForm(props) {
 
                 </div>
                 <button>Send</button>
-                <a href="#">Cancel</a>
+                <Link href="/login">Cancel</Link>
             </form>
         </React.Fragment>
     );
