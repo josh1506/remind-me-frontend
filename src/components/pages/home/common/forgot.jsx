@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function ForgotPassForm(props) {
+    const [user, setUser] = useState({ email: '' })
     return (
         <React.Fragment>
             <div>
@@ -10,7 +11,14 @@ function ForgotPassForm(props) {
             <form action="">
                 <div>
                     <p>email</p>
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        value={user.email}
+                        onChange={e => setUser({ email: e.currentTarget.value })}
+                    />
 
                 </div>
                 <button>Send</button>

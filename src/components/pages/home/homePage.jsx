@@ -8,8 +8,8 @@ function HomePage(props) {
         <div>
             <img src="" alt="photo" />
             {/* <LoginForm /> */}
-            <RegisterForm />
-            {/* <ForgotPassForm /> */}
+            {/* <RegisterForm /> */}
+            <ForgotPassForm />
         </div>
     );
 }
