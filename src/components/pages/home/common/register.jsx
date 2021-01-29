@@ -52,7 +52,7 @@ function RegisterForm(props) {
                 onChange={e => setConPassword(e.currentTarget.value)}
             />
 
-            <Link to="/login">Cancel</Link>
+            <Link to="/">Cancel</Link>
             <button>Register</button>
         </form>
     );

@@ -22,7 +22,7 @@ function ForgotPassForm(props) {
 
                 </div>
                 <button>Send</button>
-                <Link href="/login">Cancel</Link>
+                <Link to="/">Cancel</Link>
             </form>
         </React.Fragment>
     );
