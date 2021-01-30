@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
+import configStore from '../../../../app/configureStore'
+import { authCreated, authRemoved } from '../../../../app/auth'
+
+
+const store = configStore()
 
 function LoginForm(props) {
     const [user, setUser] = useState({ email: '', password: '' })
+    const [data, setData] = useState({
+        id: '',
+        username: '',
+        email: '',
+        tokens: {
+            refreshToken: '',
+            accessToken: ''
+        }
+    })
+
+
     return (
         <form action="">
             <img src="" alt="logo" />
