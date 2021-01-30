@@ -1,7 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
+import reducer from './auth'
 
 export default function () {
-    const store = configureStore({
-        
-    })
+    return configureStore({reducer})
 }
